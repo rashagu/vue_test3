@@ -4,7 +4,7 @@ interface ExampleProps {
   name?: string,
 }
 
-const CaseInput = defineComponent<ExampleProps>(props => {
+const Test = defineComponent<ExampleProps>(props => {
   return () => (
     <div style={{padding: '2rem 2.5rem'}}>
       123驱蚊器asdadasdasdasd
@@ -12,8 +12,8 @@ const CaseInput = defineComponent<ExampleProps>(props => {
   )
 })
 
-CaseInput.props = {
+Test.props = {
   name: String,
 }
 
-export default CaseInput
+export default Test

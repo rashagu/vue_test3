@@ -30,7 +30,7 @@ const router = createRouter({
           children: [
             {
               path: 'index',
-              component: () => import("../view/CaseInput"),
+              component: () => import("../view/Test"),
               meta: {
                 keepAlive: true,
               },
