@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Source Han Sans CN';
+    src: url('./assets/font/SourceHanSans-Normal.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+    background: rgba(238, 238, 238, 0.3);
+    border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: #E2E4E9;
+}
+*::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+}
+
+html{
+    font-size: 16px;
+}
+html,
+body,
+#app {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#app {
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: 400;
+}
+.ant-image-preview-wrap{
+    img, video {
+        margin: auto;
+    }
+}
+
+.header_input {
+    .ant-input-group-addon,.ant-input-affix-wrapper{
+        background-color: #fafafa;
+        border: none!important;
+    }
+    input{
+        background: none;
+    }
+}
+
+
+
+
+.my_menu .ant-menu-submenu{
+    background: none!important;
+}
+
+.my_menu .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: none!important;
+}
+
+.my_menu .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+    border-right: 0!important;
+}
+.my_menu .ant-menu{
+    background: none!important;
+}
+
+
+/***菜单文字图标居中*/
+//.my_menu .ant-menu-item,.my_menu .ant-menu-submenu-title{
+//    padding: 0!important;
+//    display: flex;
+//    justify-content: center;
+//}
+//.my_menu .ant-menu-submenu-title *,.my_menu .ant-menu-item *{
+//    flex: none!important;
+//}
+.my_menu .ant-menu-item{
+    padding: 0!important;
+    display: flex;
+    justify-content: center;
+}
+.my_menu .ant-menu-item *{
+    flex: none!important;
+}
+
+
+.my_menu .ant-menu-submenu-title{
+    height: 3.2rem!important;
+    border-radius: .5rem;
+}
+
+
+
+.my_menu .ant-menu-submenu-arrow{
+    display: none;
+}
+
+
+.my_menu .ant-menu-submenu-open{
+    background: rgba(236, 244, 254, 0.6) !important;
+    border-radius: .5rem;
+}
+.my_menu .ant-menu-submenu-open > .ant-menu-submenu-title{
+    background: linear-gradient(#338cff 0%, #006df8 100%);
+    box-shadow: 0 6px 12px rgba(39, 132, 251, 0.13);
+    color: white;
+}
+
+.my_menu .ant-menu-submenu-title .ant-menu-title-content{
+    font-family: "Source Han Sans CN";
+}
+.my_menu .ant-menu-item .ant-menu-title-content{
+    font-family: "Source Han Sans CN";
+    font-weight: normal;
+    color: #253858;
+}
+.my_menu .ant-menu-item-selected .ant-menu-title-content{
+    color: #2784fb;
+}
+
+
+.my_nav_tabs *{
+
+}
+.my_nav_tabs .ant-tabs-tab{
+    border: 0!important;
+}
+.my_nav_tabs .ant-tabs-nav{
+    margin: 0!important;
+}
+.my_nav_tabs .ant-tabs-content-holder{
+display: none;
+}
+.my_nav_tabs .ant-tabs-tab-active{
+    position: relative;
+}
+.my_nav_tabs .ant-tabs-tab-active::after{
+    content: '';
+    width: 70%;
+    height: 2px;
+    background-color: #2784FB;
+    position: absolute;
+    left: calc(50% - .5rem);
+    transform: translate(-50%, 0);
+    bottom: 0;
+}
+
+.my_nav_tabs .ant-tabs-nav:before{
+    border: 0!important;
+}
+
+
+.ant-modal-content {
+    border-radius: 10px!important;
+    overflow: hidden!important;
+}
+
+
+.ant-pagination-item-link{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
